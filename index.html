@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><link rel="shortcut icon" type="image/x-icon" href="barcode.ico"><meta charset="UTF-8"></head>
+
+  <header id="header">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <title>Romanoff | Gradients</title>
+  </header>
+
+  <body style="font-family: 'Montserrat', sans-serif;">
+
+<script type="text/javascript">
+      
+    
+if(document.addEventListener){
+  document.addEventListener("DOMContentLoaded", function(){
+    loaded();
+  });
+} else if(document.attachEvent){
+  document.attachEvent("onreadystatechange", function(){
+    loaded();
+  });
+}
+
+function loaded(){
+  
+  setInterval(loop, 250);
+
+}
+
+var x = 0;
+ var titleText = ["Romanoff | Gradients", "Romanoff | Gradient", "Romanoff | Gradien", "Romanoff | Gradie", "Romanoff | Gradi", "Romanoff | Grad", "Romanoff | Gra", "Romanoff | Gr", "Romanoff | G", "Romanoff |", "Romanoff", "Romanof", "Romano", "Roman", "Roma", "Rom", "Ro", "R", "Ro", "Rom", "Roma", "Roman", "Romano", "Romanof", "Romanoff", "Romanoff |", "Romanoff | G", "Romanoff | Gr", "Romanoff | Gra", "Romanoff | Grad", "Romanoff | Gradi", "Romanoff | Gradie", "Romanoff | Gradien", "Romanoff | Gradient", "Romanoff | Gradients"];
+//var titleText = ["Romanoff", "Romanof", "Romano", "Roman", "Roma", "Rom", "Ro", "R", "Ro", "Rom", "Roma", "Roman", "Romano", "Romanof","Romanoff",];
+
+// "Romanoff | Social media", "Romanoff | Social medi", "Romanoff | Social med", "Romanoff | Social me", "Romanoff | Social m", "Romanoff | Social", "Romanoff | Socia", "Romanoff | Soci", "Romanoff | Soc", "Romanoff | So", "Romanoff | S", "Romanoff |",  "Romanoff |", "Romanoff | S", "Romanoff | So", "Romanoff | Soc", "Romanoff | Soci", "Romanoff | Socia", "Romanoff | Social", "Romanoff | Social m", "Romanoff | Social me", "Romanoff | Social med", "Romanoff | Social medi", "Romanoff | Social media" 
+
+function loop(){
+
+  document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+
+}
+
+    </script>
+
+    <div class="container">
+      <h1>Romanoff | Gradients</h1>  
+      <h1 class="sub-text" style="font-family: 'Montserrat', sans-serif;">
+        Текущий цвет:
+        <span id="random-color">#2d1dba</span> &
+        <span id="random-color-2">#f772ff</span>
+      </h1>
+      <button class="btn sm ghost" onClick="randomColor()">Новый градиент</button>
+      <a onclick="copyColors()">
+        <i class="fas fa-copy ghost data-ctc"></i>
+      </a>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
