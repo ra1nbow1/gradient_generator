@@ -1,8 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Quicksand";
 :root {
   --primary: white;
-  --random-color: #2d1dba;
-  --random-color-2: #f772ff;
+  --random-color: #4281cb;
+  --random-color-2: #7a07e0;
+  --degree: 90deg;
 }
 
 html {
@@ -10,18 +11,13 @@ html {
 }
 
 body {
-  top: 50%;
   text-align: center;
   align-items: center;
-  font-family: Quicksand;
-  background-color: #f772ff;
-  background-image: linear-gradient(
-    to top right,
-    var(--random-color-2),
-    var(--random-color)
-  );
+  font-family: 'Quicksand';
+  background-color: #0ddbc0;
+  background-image: linear-gradient(var(--degree),var(--random-color-2),var(--random-color));
   color: var(--primary);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 h1:first-child {
@@ -52,12 +48,6 @@ h1:first-child {
   color: var(--primary);
   border: 1px solid var(--primary);
   transition: 0.2s ease;
-
-  &:hover {
-    background-color: var(--primary);
-    color: var(--random-color);
-    transition: 0.2s ease;
-  }
 }
 
 .fa-copy {
@@ -73,4 +63,82 @@ h1:first-child {
 
 #random-color-2 {
   text-decoration: underline;
+}
+
+.container_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.top input {
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 40px;
+  background: rgba(100%,100%,100%,0.1);
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+input:focus {
+  border: none
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+li:hover {
+  background: rgba(0,0,0,0.2);
+  transition: .2s;
+  padding: auto 7px;
+  /* transform: scale(1.045); */
+  border-radius: 10px;
+}
+
+li:not(:hover) {
+  transition: .2s;
+}
+
+ul {
+  line-height: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.history i {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 35px;
+  margin-right: 10px;
+}
+
+.history i:not(:hover) {
+  transition: .2s;
+}
+
+.history i:hover {
+  transition: .2s;
+}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
 }
